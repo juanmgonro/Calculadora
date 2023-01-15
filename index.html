@@ -23,19 +23,25 @@
         <h1 class="col-12">Calculadora</h1>
     </header>
     </div>
-
+    <!-- Agruegue este form para limitar mis entradas en inputs
+    mis dos inputs no deben de estar vacios entonces agregue el required 
+    para que n me haga operaciones si lo estan, ademas puse un limite seguro 
+    para que no pase el resultado a un limite no seguro de los tipos
+    de dato number.    -->
+    <!-- Agregue pasos de .01 en mis inputs y el resultado me lo muestra 
+    con decimales, lo ultimo configurado en Javascript -->
     <form class="container text-center bg-dark" method="post" onsubmit="return false">
         <!-- Este DIV es para clocar numeros y mostrar resultados-->
         <div class="row justify-content-center align-content-center">
             <div class="col-12 col-sm-6">
                 <label for="primer_numero">Primer numero</label><br>
                 <input name="segundo_numero" id="primerNumero" type="number" 
-                placeholder="Numero" min="-10000000" max="10000000" step="0.1" required>
+                placeholder="Numero" min="-10000000" max="10000000" step="0.01" required>
             </div>
             <div class="col-12 col-sm-6">
                 <label for="segundo_numero">Segundo numero</label><br>
                 <input name="segundo_numero" id="segundoNumero" type="number" 
-                placeholder="Numero" min="-10000000" max="10000000" step="0.1" required>
+                placeholder="Numero" min="-10000000" max="10000000" step="0.01" required>
             </div>
         </div>
         <div class="row justify-content-center align-content-center">
